@@ -11,7 +11,7 @@
         <!--Get News-->
         <scene sceneID="vOM-SJ-cjO">
             <objects>
-                <viewController storyboardIdentifier="GetNewsViewController" id="eB2-O8-Iie" customClass="GetNewsViewController" sceneMemberID="viewController">
+                <viewController id="eB2-O8-Iie" customClass="GetNewsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B6R-mm-t7K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,9 +71,7 @@
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="zLZ-fi-nu7"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="GetButtonTapped" destination="d21-Lv-jus" id="cno-tu-hgc"/>
-                        <outlet property="activityIndicatorView" destination="hXu-Zd-1jd" id="vyN-kf-XUu"/>
-                        <outlet property="enterIndustryCategory" destination="Qri-Kw-RKb" id="YeT-CA-AFH"/>
+                        <outlet property="getButtonTapped" destination="d21-Lv-jus" id="cno-tu-hgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOq-k1-B9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,11 +10,12 @@ import Gloss
 
 class GetNewsViewController: UIViewController {
     
-    var items: [Item] = []
-    var searchResult = "/(enterIndustryCategory)"
+    //var items: [Item] = []
+   // var searchResult = "/(enterIndustryCategory)"
+    var searchResult = "apple"
     
-    @IBOutlet weak var enterIndustryCategory: UITextField!
-    @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
+  
+   /* @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
     override func viewDidLoad() {
            super.viewDidLoad()
@@ -35,9 +36,9 @@ class GetNewsViewController: UIViewController {
            }
        
    
-       }
+       }*/
 
-    @IBOutlet weak var GetButtonTapped: UIButton!
+    @IBOutlet weak var getButtonTapped: UIButton!
     
     @IBAction func getDataTapped(_ sender: Any) {
             handleGetData()
@@ -45,7 +46,7 @@ class GetNewsViewController: UIViewController {
     
  
     func handleGetData(){
-        self.activityIndicator(animated: true)
+        //self.activityIndicator(animated: true)
         let jsonUrl = "http://newsapi.org/v2/everything?q=\(searchResult)&from=2021-07-15&to=2021-08-05&sortBy=popularity&apiKey=1920b7f830414a5bb662b581372ff993"
         
         guard let url = URL(string: jsonUrl) else {return}
