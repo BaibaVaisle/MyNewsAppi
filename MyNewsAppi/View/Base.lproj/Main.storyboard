@@ -86,7 +86,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </activityIndicatorView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsFeed" rowHeight="174" id="Q6d-Vf-ZWU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsFeed" rowHeight="174" id="Q6d-Vf-ZWU" customClass="NewsTableViewCell" customModule="MyNewsAppi" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="174"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q6d-Vf-ZWU" id="Pz9-ZU-ZmO">
@@ -117,8 +117,16 @@
                                                 </stackView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsImageView" destination="ovM-0G-WTM" id="uYe-H4-asb"/>
+                                            <outlet property="newsTitleLabel" destination="eB6-2v-ykM" id="zbD-qW-nsB"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4eF-9u-OPr" id="Xz0-ZS-lwg"/>
+                                    <outlet property="delegate" destination="4eF-9u-OPr" id="oep-GT-o0g"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pzo-8L-bTo"/>
