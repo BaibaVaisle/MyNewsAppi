@@ -49,11 +49,16 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
+                                            <action selector="getDataTapped:" destination="eB2-O8-Iie" eventType="touchUpInside" id="Gwe-zw-xXT"/>
                                             <segue destination="4eF-9u-OPr" kind="show" id="lNw-Hy-qaq"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="hXu-Zd-1jd">
+                                <rect key="frame" x="20" y="465" width="374" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="auV-ZT-nF2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -65,6 +70,11 @@
                     <navigationItem key="navigationItem" title="Get News" id="ELr-O4-zzj">
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="zLZ-fi-nu7"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="GetButtonTapped" destination="d21-Lv-jus" id="cno-tu-hgc"/>
+                        <outlet property="activityIndicatorView" destination="hXu-Zd-1jd" id="vyN-kf-XUu"/>
+                        <outlet property="enterIndustryCategory" destination="Qri-Kw-RKb" id="YeT-CA-AFH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOq-k1-B9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
