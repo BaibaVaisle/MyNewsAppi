@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import Gloss
 
 class NewsFeedViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+    //var delegate: ChangeCityDelegate?
+    //var items: [Item] = []
+    var searchResult = "apple"
 
-
+    
+    
+    @IBOutlet weak var enterTextFieldLabel: UITextField!
+    
+    @IBOutlet weak var getButtonTapped: UIButton!
+    
 }
-
